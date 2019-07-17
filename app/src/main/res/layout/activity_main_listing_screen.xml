@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
-        tools:context=".MainActivity">
+        tools:context=".clean.presentation.features.mainListingScreen.MainListingScreenActivity">
 
     <android.support.design.widget.AppBarLayout
             android:id="@+id/app_bar"
@@ -20,7 +20,7 @@
                 android:fitsSystemWindows="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:toolbarId="@+id/toolbar"
+                app:toolbarId="@+id/photo_details_toolbar"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed"
                 app:contentScrim="?attr/colorPrimary">
 
@@ -39,6 +39,6 @@
             android:layout_height="match_parent"
             android:id="@+id/main_recycler_view"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:listitem="@layout/main_recycler_view_item"/>
+            tools:listitem="@layout/main_recycler_view_item"/>
 
 </android.support.design.widget.CoordinatorLayout>
